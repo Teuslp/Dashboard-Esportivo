@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="img/escudo.png" alt="Escudo do Time">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarConteudo('perfil')">Perfil</a></li>
+                <li><a href="#" onclick="mostrarConteudo('contador')">Contador</a></li>
+                <li><a href="#" onclick="mostrarConteudo('agenda')">Agenda</a></li>
+                <li><a href="#" onclick="mostrarConteudo('historico')">Histórico</a></li>
+                <li><a href="#" onclick="mostrarConteudo('informacoes')">Informações</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div id="perfil" class="aba">
+            <h1>Perfil</h1>
+            <div class="dados">
+                <div class="avatar">
+                    <img src="img/Pele01.jpg" alt="Foto do Usuário">
+                </div>
+                <p><strong>Nome:</strong> <span id="nomeUsuario">Pelé</span></p>
+                <p><strong>Número da Camisa:</strong> <span id="numeroCamisa">10</span></p>
+                <p><strong>Jogos Disputados:</strong> <span id="quantidadeJogos">50</span></p>
+                <p><strong>Assistências:</strong> <span id="quantidadeAssistenciasPerfil">30</span></p>
+                <p><strong>Gols Marcados:</strong> <span id="quantidadeGolsPerfil">20</span></p>
+            </div>
+        </div>
+        <div id="contador" class="aba" style="display: none;">
+            <h1>Contador</h1>
+            <div class="form-partida">
+                <label for="nomeAdversario">Time Adversário:</label>
+                <input type="text" id="nomeAdversario" placeholder="Digite o nome do time adversário">
+                <label for="placarMeuTime">Placar do Meu Time:</label>
+                <input type="number" id="placarMeuTime" placeholder="Digite o placar do seu time">
+                <label for="placarAdversario">Placar do Time Adversário:</label>
+                <input type="number" id="placarAdversario" placeholder="Digite o placar do time adversário">
+                <label for="quantidadeGols">Meus Gols:</label>
+                <input type="number" id="quantidadeGols" placeholder="Digite a quantidade de gols que você fez">
+                <label for="quantidadeAssistencias">Minhas Assistências:</label>
+                <input type="number" id="quantidadeAssistencias" placeholder="Digite a quantidade de assistências">
+                <button onclick="adicionarPartida()">Adicionar Partida</button>
+            </div>
+        </div>
+        <div id="historico" class="aba" style="display: none;">
+            <h1>Histórico de Partidas</h1>
+            <table id="tabelaHistorico">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Time Adversário</th>
+                        <th>Meus Gols</th>
+                        <th>Minhas Assistências</th>
+                        <th>Resultado</th>
+                        <th>Resultado Geral</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="agenda" class="aba" style="display: none;">
+            <h1>Agenda</h1>
+            <div class="form-agenda">
+                <label for="dataEvento">Data do Evento:</label>
+                <input type="date" id="dataEvento">
+                <label for="descricaoEvento">Descrição do Evento:</label>
+                <input type="text" id="descricaoEvento" placeholder="Digite a descrição do evento">
+                <button onclick="adicionarEvento()">Adicionar Evento</button>
+            </div>
+            <div id="listaEventos">
+                
+            </div>
+        </div>
+        <div id="informacoes" class="aba" style="display: none;">
+            <h1>Informações</h1>
+            <p>Desenvolvimento...</p>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #032b11 0%, #0a7a3d 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(134, 243, 134);
+}
+
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name input, .numero input, .usuario input, .email input, .senha input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 10px 0;
+}
+
+.entrar .btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1.0rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #004706;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.entrar .btn:hover {
+    background-color: #012004;
+    transform: scale(1.05);
+}
+
+input::placeholder {
+    color: #888;
+}
+
+h1 {
+    color: #FAFAFA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.caixa {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.caixa img {
+    width: 70px;
+}
+
+input:focus {
+    outline: none;
+}

@@ -1,0 +1,247 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #032b11 0%, #0a7a3d 100%);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #0a7a3d;
+    border-radius: 40px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+#contador h1{
+    text-align: center;
+    padding: 10px;
+} 
+
+.form-partida {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-partida label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #032b11;
+}
+
+.form-partida input {
+    width: calc(100% - 30px);
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.form-partida button {
+    width: 100%;
+    padding: 10px;
+    background-color: #032b11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-partida button:hover {
+    background-color: #004706;
+}
+
+#perfil {
+    padding: 20px;
+    display: none; 
+}
+
+#perfil h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#perfil .dados {
+    max-width: 400px; 
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#perfil .dados p {
+    margin-bottom: 15px; 
+    font-size: 20px; 
+    color: #000000;
+}
+
+#perfil .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#perfil .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#agenda h1{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.form-agenda {
+    max-width: 300px;
+    margin-left: 360px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-agenda label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #032b11;
+}
+
+.form-agenda input,
+.form-agenda button {
+    width: calc(100% - 30px);
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.form-agenda button {
+    width: 100%;
+    padding: 10px;
+    background-color: #032b11;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.form-agenda button:hover {
+    background-color: #004706;
+}
+
+#listaEventos {
+    margin: auto;
+    margin-left: 360px;
+    margin-right: 375px;
+    margin-top: 10px;
+    display: block;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#historico {
+    padding: 20px;
+    display: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+#historico h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#historico .tabela-historico {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#historico table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#historico table th, 
+#historico table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#historico table th {
+    background-color: #032b11;
+    color: #fff;
+}
+
+#historico table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
